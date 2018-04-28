@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+This creates a new git repository using the current directory the user is in. 
+No commits would be made and the if any files are present they would be untracked.
+git status can be used to check this.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area - Collection of things which will be moved to repository as part of next commit.
+Working directory - The directory in which we are aking our changes.
+Repository - All snapshots of commits are stored.
+
