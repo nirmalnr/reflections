@@ -10,3 +10,7 @@ Staging area - Collection of things which will be moved to repository as part of
 Working directory - The directory in which we are aking our changes.
 Repository - All snapshots of commits are stored.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+Only add the files that we want to commit to the staging area and commit with appropriate comment.
+Then add the changes for the next logical change to it and commit.
