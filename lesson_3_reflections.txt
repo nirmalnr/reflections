@@ -2,3 +2,41 @@ When would you want to use a remote repository rather than keeping all your work
 
 When you want to collaborate with other people.
 Save your changes to cloud so that they won't be lost and would be accessible from anywhere.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Can cause conflicts.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Fork   : Creates a copy of the repository to your github account. 
+         Use this if we want to build on top of something someone else made.
+Clone  : Copies a repository from github or local. 
+         Use this to get the copy of a repository on our local machine to work on.
+Branch : Branches are movable pointers to commits. Whenever a commit is made it moves forward. 
+         A single commit can be the parent to more than one commit and that creates a branch.
+         Use this when we want to try something on the code so that original code would remain intact in the original branch.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Will have the latest changes in our local so that we can work on them.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Mailing code back and forth.
+EVerything would be harder.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+We can branch when we want to try something on the code so that original code would remain intact in the original branch. 
+A working version of the code would exist and someone else can build another feature if they want based on that.
+
+Commands:
+
+git remote  |    Show all remote locations for the repository
+git remote add origin url |     Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. Url should be the https url to the github repository.
+git remove -v  |    Outputs the remote locations with verbose information (fetch and push urls)
+git push origin master  |    Push the master branch to the remote location origin.
+git pull origin master  |    Get the master branch from the remote location origin.
+git pull origin master  |    = Git fetch origin + git merge master origin/master
+git fetch origin  |    Get the changes from the remote location into the (hidden?) origin/master branch
